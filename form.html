@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Strona WWW na projekt zaliczeniowy" />
+    <meta name="author" content="Krystian" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Sklep internetowy</title>
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-tablet m-1"></i>Sklep internetowy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html">Strona główna</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="products.html">Oferta</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 active" aria-current="page" href="#!">Złóż zamówienie</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="login.html">Logowanie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contact section-->
+    <section class="bg-light py-5">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cart-check"></i></div>
+                <h2 class="fw-bolder">Złóż zamówienie</h2>
+                <p class="lead mb-0">Wypełnij formularz zamówienia aby zakupić produkt</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                     <form method="post" action="mailto:xxx@xx.xx" > <!-- onsubmit="return sprawdz()"> -->
+                        <!-- Firstname input-->
+                        <div class="col-sm-12 mb-3">
+                            <label for="first-name" class="form-label">Imię</label>
+                            <input type="text" class="form-control" id="first-name" />
+                            <span id="first-name-error" class="error-form-valid"></span>
+                        </div>
+                        <!-- Lastname input-->
+                        <div class="col-sm-12 mb-3">
+                            <label for="last-name" class="form-label">Nazwisko</label>
+                            <input type="text" class="form-control" id="last-name" />
+                            <span id="last-name-error" class="error-form-valid"></span>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="col-sm-12 mb-3">
+                            <label for="email" class="form-label">Adres email</label>
+                            <input type="text" class="form-control" id="email" />
+                            <span id="email-error" class="error-form-valid"></span>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="col-sm-12 mb-3">
+                            <label for="phone" class="form-label">Numer telefonu</label>
+                            <input type="number" class="form-control" id="phone" />
+                            <span id="phone-error" class="error-form-valid"></span>
+                        </div>
+                        <!-- Address input-->
+                        <div class="col-sm-12 mb-3">
+                            <label for="address" class="form-label">Ulica i numer</label>
+                            <input type="text" class="form-control" id="address" />
+                            <span id="address-error" class="error-form-valid"></span>
+                        </div>
+                        <!-- City input-->
+                        <div class="col-sm-12 mb-3">
+                            <label for="city" class="form-label">Miasto</label>
+                            <input type="text" class="form-control" id="city" />
+                            <span id="city-error" class="error-form-valid"></span>
+                        </div>
+                        <!-- Zip code input-->
+                        <div class="col-sm-12 mb-3">
+                            <label for="zip-code" class="form-label">Kod pocztowy</label>
+                            <input type="text" class="form-control" id="zip-code" />
+                            <span id="zip-code-error" class="error-form-valid"></span>
+                        </div>
+                        <!-- Country name input -->
+                        <div class="mb-3">
+                            <label for="checked-device" class="form-label">Wybierz urządzenie</label>
+                            <select name="device" class="form-select" id="checked-device">
+                                <option value="Iphone-11" selected>iPhone 11</option>
+                                <option value="Iphone-12">iPhone 12</option>
+                                <option value="Iphone-13">iPhone 13</option>
+                                <option value="Samsung-S22+">Samsung S22+</option>
+                                <option value="Samsung-S20-FE">Samsung S20 FE</option>
+                                <option value="Samsung-A53-5G">Samsung A53 5G</option>
+                                <option value="Xiaomi-Redmi-Note-11S">Xiaomi Redmi Note 11S</option>
+                                <option value="Xiaomi-Redmi-Note-10">Xiaomi Redmi Note 10</option>
+                                <option value="Xiaomi-POCO-F3-5G">Xiaomi POCO F3 5G</option>
+                            </select>
+                        </div>
+
+                        <!-- Payment method input -->
+                        <div class="mb-3">
+                            <p class="lead mb-1">Metoda płatności:</p>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="payment-method" name="metoda-platnosci" value="paypal" checked>
+                                <label class="form-check-label">PayPal</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="metoda-platnosci" value="mastercard">
+                                <label class="form-check-label">Mastercard</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="metoda-platnosci" value="blik">
+                                <label class="form-check-label">Blik</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="metoda-platnosci" value="platnosc-przy-odbiorze">
+                                <label class="form-check-label">Płatność przy odbiorze</label>
+                            </div>
+                        </div>
+                        <!-- Additional options -->
+                        <div class="mb-3">
+                            <p class="lead mb-1">Dodatki:</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="dodatki" value="ubezpieczenie" id="security" checked>
+                                <label class="form-check-label" for="security">Ubezpieczenie paczki</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="dodatki" value="natychmiastowa-wysylka" id="instant-shipment">
+                                <label class="form-check-label" for="instant-shipment">Natychmiastowa wysyłka</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="dodatki" value="faktura" id="faktura">
+                                <label class="form-check-label" for="faktura">Faktura</label>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <!-- Submit Button-->
+                        <button type="button" class="btn btn-primary" onclick="zapisz()">Zapisz</button>
+                        <button type="button" class="btn btn-primary"  onclick="usunWszystko()">Wyczyść</button>
+                        <button type="button" class="btn btn-primary"  onclick="wyswietl()">Wyświetl</button>
+                    </form>
+                    <div id="list">
+                        <!-- <hr class="my-4"> -->
+                        <!-- <p class="lead mb-1">Koszyk z zamówieniem:</p>
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row">Imię</th>
+                                <td>Otto</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Nazwisko</th>
+                                <td>Thornton</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Email</th>
+                                <td>the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Telefon</th>
+                                <td>the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Ulica i numer</th>
+                                <td>the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Miasto</th>
+                                <td>the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Kod pocztowy</th>
+                                <td>the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Urządzenie</th>
+                                <td>the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Metoda płatności</th>
+                                <td>the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Dodatki</th>
+                                <td>the Bird</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Projekt końcowy - Krystian Czapla 2022</p></div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Form validation -->
+    <script src="js/form-valid.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <!-- Maybe delete it later-->
+    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+</body>
+</html>

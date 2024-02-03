@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Strona WWW na projekt zaliczeniowy" />
+    <meta name="author" content="Krystian" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/geolokalizacja.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <title>Sklep internetowy</title>
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-tablet m-1"></i>Sklep internetowy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3 active" aria-current="page" href="#!">Strona główna</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="products.html">Oferta</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="form.html">Złóż zamówienie</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="login.html">Logowanie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center text-white">
+                        <h1 class="display-5 fw-bolder text-white mb-2">Zdobądź fantastyczny smartphone</h1>
+                        <p class="lead text-white-50 mb-4">Nasz sklep posiada bardzo szeroką ofertę urządzeń z całego świata. Zapraszamy do skorzystania z oferty!</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Więcej o nas!</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="products.html">Sprawdź ofertę</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features section-->
+    <section class="py-5 border-bottom" id="features">
+        <div class="container px-5 my-5">
+            <h2 class="fw-bolder d-flex align-items-center justify-content-center pb-5">Co wyróżnia nasz sklep?</h2>
+            <div class="row gx-5">
+                <div class="col-lg-4 col-sm-6 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cart"></i></div>
+                            <h2 class="h4 fw-bolder">Szeroka oferta</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cash-coin"></i></div>
+                            <h2 class="h4 fw-bolder">Świetne ceny</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-square"></i></div>
+                            <h2 class="h4 fw-bolder">Wsparcie techniczne</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consequat.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-award"></i></div>
+                            <h2 class="h4 fw-bolder">Wieloletnie doświadczenie</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consequat.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-bag-check"></i></div>
+                            <h2 class="h4 fw-bolder">Gwarancja zadowolenia</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consequat.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-calendar2-date"></i></div>
+                            <h2 class="h4 fw-bolder">Szybka dostawa</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consequat.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Opinions section-->
+    <section class="py-5 border-bottom">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Opinie klientów</h2>
+                <p class="lead mb-0">na temat naszej firmy <i class="bi bi-emoji-heart-eyes-fill"></i></p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <!-- Testimonial 1-->
+                    <div class="card mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><i class="bi bi-chat-right-text-fill text-primary fs-1"></i></div>
+                                <div class="ms-4">
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut minim veniam consequat.</p>
+                                    <div class="small text-muted"><i class="bi bi-person"></i> Client Name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2-->
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><i class="bi bi-chat-right-text-fill text-primary fs-1"></i></div>
+                                <div class="ms-4">
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut minim veniam consequat.</p>
+                                    <div class="small text-muted"><i class="bi bi-person"></i> Client Name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Google Map -->
+    <section class="py-5 border-bottom">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Znajdź nas</h2>
+                <div id="geo"></div>
+                <p class="py-2">
+                    <button type="button" class="btn btn-primary" onclick="getLocation()">Sprawdź lokalizację</button>
+                </p>
+                <div id="dod-mapa" class="row gx-5 justify-content-center"></div>
+            </div>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <a class="text-decoration-none link-dark" href="https://www.facebook.com" target="_blank">
+                                <h2 class="card-title"><i class="bi bi-facebook text-primary"></i> Facebook</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <a class="text-decoration-none link-dark" href="https://pl.linkedin.com/" target="_blank">
+                                <h2 class="card-title"><i class="bi bi-linkedin text-primary"></i> Linkedin</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5"> 
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <a class="text-decoration-none link-dark" href="https://twitter.com/" target="_blank">
+                                <h2 class="card-title"><i class="bi bi-twitter text-primary"></i> Twitter</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Projekt końcowy - Krystian Czapla 2022</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
